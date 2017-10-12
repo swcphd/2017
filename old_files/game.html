@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title> SWC PhD programme </title>
+  <link rel="icon" href="./pictures/cropped-SWC-PHD-Icon.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<nav>
+    <ul class="horizontal">
+      <li class="hor"><a href="index.html">Home</a></li>
+      <li class="hor"><a href="about.html">About Us</a></li>
+      <li class="hor"><a href="blog.html">Blog</a></li>
+      <li class="hor"><a href="events.html">Events</a></li>
+	  <li class="hor"><a class ="active" href="game.html">Game</a></li>
+    </ul>
+
+
+    <ul class="vertical">
+      <li class="ver"><a href="experimental.html">Experimental</a></li>
+      <li class="ver"><a href="systems_theoretical.html">Systems and Theoretical</a></li>
+    </ul>
+</nav>
+
+<div class="main">
+
+<img align="center" id="swcLogo" width="512" height="88" src="SWC_Logo_cropped.png">
+
+<p id="someDiv">
+Hello, and welcome to the SWC christmas game! <br> <br>
+
+Your brain (shown below) is stuck in a virtually endless SWC logo. Your goal will be to dodge <br>
+the wavy facades, and obtain your water reward. High scores will be recorded, and the winner <br>
+gets a glass of water at Christmas lunch. <br>
+<br>
+After 20 games, a screen will pop up that prompts you to save a file. Please save this file and send it
+ to <a href="mailto:skgtpge@ucl.ac.uk.com">this address</a>. 
+<br><br>
+To start the game, please enter your name in the box below and press "Start game". 
+</p>
+
+<br>
+<img id="brainplayer" width="60" height="60" src="brainplayer.png">
+<input id="userNameInput" type="text">
+
+<input type="button" id="startButton" value="Start game">
+<br>
+
+<canvas id="myCanvas" width="1000" height="600" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<input type="button" id="pauseButton" value="Pause"/>
+<br><br>
+<!--<input type="button" id="downloadbutton" value="Download scores" /> -->
+
+  
+<script type="text/javascript" src="flappybrain_actualbrain_Filedwnldversion.js"> </script>
+
+</div>
+
+</body>
+</html>
