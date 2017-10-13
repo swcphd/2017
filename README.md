@@ -1,4 +1,4 @@
 # swc-phd-website
-SWC PhD 2017 website repo
+SWC PhD website repo
 
-The website can be accessed at ...
+The website can be accessed at https://www.swc.ucl.ac.uk/phd16/
