@@ -70,8 +70,7 @@ ul.nav-pills {
     margin-top: 0;
     background-color: rgb(244, 248, 249); 
     color: rgb(13, 35, 112);
-    border-left: solid 1px darkblue;
-    border-right: solid 1px darkblue;
+    border: solid 1px darkblue;
 }
 
 .image {
@@ -83,14 +82,16 @@ ul.nav-pills {
 }
 
 .equation {
-	font-size:20pt;
+	font-size:18pt;
 	text-align: center;
 	margin: 0 auto;
 }
 
 .eqcontainer {
-	margin-left: 25vw;
+	text-align: center;
+	margin: 0 auto;
 	float: center;
+	padding-left: 10%;
 }
 
 .w3-row-padding img {margin-bottom: 12px}
@@ -310,14 +311,10 @@ ul.nav-pills {
 	<p>A transmitted light microscope is infinity corrected, meaning it converts divergent light into collimated light before focusing light onto a photosensitive material (such as a CCD or a retina).<br>
 	Infinity corrected microscopes use two lenses: an objective lens and a tube lens. One of the advantages of this system is that it does not matter at what distance the tube lens is placed relative to the objective lens. Therefore the magnification of this system is determined by the ratio of the focal length of the tube lens to the focal length of the objective lens. The resolution limit (the minimum distance at which you can reliably tell two dots apart) is related to the diameter of the lens and the longest wavelength of light used:
 	</p>
-                    <span class="eqcontainer" text-align="center" padding-left="10vw">
-			<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mi>e</mi><msub><mi>s</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mfrac><mi>&#x3BB;</mi><mrow><mi>N</mi><mi>A</mi></mrow></mfrac></math>
-		</span> <br><br>
-			 <span class="eqcontainer" text-align="center" padding-left="10vw">
-				<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mi>A</mi><mo>=</mo><mi>n</mi><mi>sin</mi><mo>(</mo><mi>&#x3B8;</mi><mo>)</mo></math>
-				 </span><br><br>
-				  <span class="eqcontainer" text-align="center" padding-left="10vw">
-					<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3B8;</mi><mo>=</mo><mi>arctan</mi><mfrac><mi>D</mi><mrow><mn>2</mn><mi>F</mi></mrow></mfrac></math>
+            <span class="eqcontainer" text-align="center" padding-left="10vw" font-size="12pt">
+				<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mi>e</mi><msub><mi>s</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mfrac><mi>&#x3BB;	</mi><mrow><mi>N</mi><mi>A</mi></mrow></mfrac></math>  <i font-size="12pt">&nbsp; &nbsp; where: &nbsp;</i>
+				<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mi>A</mi><mo>=</mo><mi>n</mi><mi>sin</mi><mo>(</mo><mi>&#x3B8;</mi><mo>)</mo></math> <i>&nbsp; &nbsp; and:&nbsp;</i>
+				<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3B8;</mi><mo>=</mo><mi>arctan</mi><mfrac><mi>D</mi><mrow><mn>2</mn><mi>F</mi></mrow></mfrac></math>
 			</span>
 
          <p> Where n is the index of refraction, θ is the maximum angle (relative to the midpoint of the lens) at which light can be focused by the lens. Due to geometric constraints, θ is determined by the lens diameter (D) and the focal length (F).
