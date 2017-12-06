@@ -21,11 +21,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+<script type="text/javascript" src="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.standardarticle.css" />
 
 <style>
 
 body, h1,h2,h3,h4,h5,h6 {font-family: "Hammersmith One"}
 
+body{
+	font-size:12pt;
+}
+
+
+a:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
 
 .navbar{
     float:right;
@@ -51,13 +62,26 @@ ul.nav-pills {
 
 .followMeBar {
     width:65vw;
-    margin-left:5vw;
+    margin-left:3vw;
     text-align: justify;
+    margin-top: 0;
 }
 
 .image {
     margin-bottom: 20px;
+    margin-left: 9vw;
 
+}
+
+.equation {
+	font-size:20pt;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.eqcontainer {
+	margin-left: 25vw;
+	float: center;
 }
 
 .w3-row-padding img {margin-bottom: 12px}
@@ -130,11 +154,13 @@ ul.nav-pills {
        <div class="followMeBar" id="Light">
         <h2 class="w3-text-Indigo"> Light </h2>
          <p>Insert stuff about light here...</p>
-         <p>Light is an electromagnetic wave within the spectrum of electromagnetic radiation and usually refers to wavelengths visible by the human eye. The portion of the spectrum defined as visible light ranges from 400 nanometer (ultraviolet) to 700 nanometer (infrared). While the intensity, the wavelength and the polarization of light can greatly vary, the speed of light in a vacuum is constant at approximately 3*10^8 ms^-1 and is thereby one of the most fundamental constants of nature.
+         <p>Light is an electromagnetic wave within the spectrum of electromagnetic radiation and usually refers to wavelengths visible by the human eye. The portion of the spectrum defined as visible light ranges from 400 nanometer (ultraviolet) to 700 nanometer (infrared). While the intensity, the wavelength and the polarization of light can greatly vary, the speed of light in a vacuum is constant at approximately <span><i> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>*</mo><msup><mn>10</mn><mn>8</mn></msup><mi>m</mi><msup><mi>s</mi><mrow><mo>-</mo><mn>12</mn></mrow></msup></math></i><span>  and is thereby one of the most fundamental constants of nature.
             </p>
 
-
-           <img src="Visible-spectrum.jpg" align="middle" width="700" height="500" >
+            <figure>
+	           <img class="image" src="Visible-spectrum.jpg" align="middle" width="700" height="500" >
+	           <figcaption align="middle" margin-bottom="200px"> Fig1. - The spectrum of electromagnetic radiation</figcaption>
+       		</figure>
 
 
            <p>While the sun, which emits most of its energy in the visual spectrum through the mechanism of black-body radiation, is the main source of natural light on earth, humans engineered several different ways to produce light in order to take advantage of its intrinsic properties. Historically, the most prominent source of light was the flame, which is the visible portion of the rapid oxidation of a material during an exothermic chemical reaction known as fire. Other types of light emission sources were used as for example incandescent light bulbs, in which filaments were heated through the passage of an electric current in order to make them glow with visible light and emit their energy through black-body radiation.
@@ -142,25 +168,35 @@ ul.nav-pills {
            <p>wo other types of light sources with fundamental importance in neuroscience are electroluminescence and fluorescence, which both do not depend on the release of heat. Electroluminescence is an optical phenomenon in which the passage of an electric current or the application of a strong electric field will induce the emission of light from a material, usually a semiconductor. Applying an electric field to a material will excite electrons in the semiconductor triggering their rearrangement thus inducing the release of photons, the quanta of electromagnetic fields. Light-emitting-diodes (LEDs), which emit a narrow spectrum of light when a suitable voltage is applied to its leads, are based on this principle and are now extensively used in neuroscience. Fluorescence on the other hand is the emission of light by a material that has absorbed electromagnetic radiation. The emitted radiation is usually of longer wavelength than the absorbed one, as the energy content of photons is inversely proportional to their wavelength. Several chemical compounds found in living organisms are fluorescent - or biofluorescent - making them ideal targets for usage in Neuroscience - as the famous protein green fluorescence protein (GFP), first isolated from the jellyfish Aequorea victoria in the 1960’s. The original GFP from Aequorea victoria, which is emitting light at 509 nm in the lower green portion of the visible spectrum, has a major excitation peak at a wavelength of 395 nm and a minor one at 475 nm. Since then, other proteins have been found and engineered providing better intrinsic properties as a single excitation peak for example.
             </p>
 
-                      <img src="Visible-spectrum.jpg" align="middle" width="700" height="500" >
+            <figure>
+	            <img  class="image" src="jello.jpg" align="middle" width="700" height="500" >
+	            <figcaption align="middle" margin-bottom="200px"> Fig2. - ASFAUJFVAUSFJGASUYFJHGSAFUYJAHLGFBA</figcaption>
+        	</figure>
 
 
            <p>Historically, the nature of light was heavily debated and most of the important concepts were formulated during the two last centuries leading to the current view of wave-particle duality.  A major breakthrough of 19th century physics was Maxwell’s formulation of four laws describing the behaviour of electric and magnetic fields, shedding some light on the nature of light. Whilst this so-called classical physics description of light has been expanded on by the advances in quantum theory in the 20th and 21st century, Maxwell’s equations still apply and are useful in numerous situations.
             </p>
            <p>Maxwell’s equations describe electromagnetic radiation as oscillations in the electric and magnetic fields propagating in space. But what is a field? A force field describes how a given non-contact force acts on a given particle at various locations in space. This force field gives a vector description of the direction and strength of the force acting on the particle. An electric field would therefore describe the attractive or repelling forces acting on an electron for example.</p>
 
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac><msqrt><mn>2</mn></msqrt></math>
+           <span class="eqcontainer">
+			<math  class="equation" xmlns="http://www.w3.org/1998/Math/MathML"><msup><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi></msup><mn>1</mn><mo>-</mo><msubsup><mn>2</mn><mi>a</mi><mn>3</mn></msubsup></math>
+			</span>
 
            <p>Maxwell’s equations described how the electric and magnetic fields influence each other as they change. According to Maxwell’s equations, if a magnetic field changes on a plane in space, it will cause the electric field to change proportionally on a plane that is perpendicular to that of the magnetic field. Specifically, what Maxwell's equations tell us is that when the electric field arrows seem to be forming a loop around some region, the magnetic field will be increasing inside that region, perpendicular to the plane of the loop. And symmetrically, such a loop in the magnetic field corresponds to a change in the electric field, perpendicular to the plane of the loop.
 </p>
            <p>A consequence of this is that an oscillating electric field that propagates in space will produce an oscillating magnetic field that will propagate at the same speed and in the same direction but on the plane perpendicular to that of the electric field (or vice-versa). These propagating electric and magnetic fields are called electromagnetic radiation.
 </p>
+
+			<figure>
+            <iframe id="iframe1" src='https://j.gifs.com/pQ296m.gif' frameborder='0' scrolling='no' width='640px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1); margin-left: 9vw; ' ></iframe>
+            <figcaption align="middle" margin-bottom="200px"> Fig3. - The electromagnetic radiation. Taken from <a href="https://www.youtube.com/watch?v=MzRCDLre1b4" target="_blank"> this </a><i> Three Blue one Brown </i> youtube video </figcaption>
+        	</figure>
+
            <p>n 1900 it became apparent that there was more to light than the classical physics description of how it works that we outlined so far. When Max Planck attempted to describe the phenomenon of black body radiation, he first suggested the notion of quanta of light. This idea referred to the observation that light waves could only gain or lose energy in discrete amounts. The idea of quanta of light was then used by Albert Einstein in 1905 to describe the photoelectric effect - work that was later awarded with a Nobel Prize in Physics. Einstein formulated the hypothesis that light wasn’t made of waves (as we have seen in the previous section) but could rather be described as both particles and waves, property known as wave-particle duality. The work of Planck and Einstein led to a revolution in modern physics and the formulation of quantum mechanics.
 </p>
 
-            <iframe id="iframe1" src='https://j.gifs.com/pQ296m.gif' frameborder='0' scrolling='no' width='640px' height='360px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-           <p>Insert stuff about light here...</p>
-           <p>Insert stuff about light here...</p>
+
+
 
         <div style="text-align: center;" "margin-top">
         </div>
